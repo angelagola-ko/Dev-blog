@@ -3,10 +3,12 @@
   --color-2: #9460cc;
   --color-3: rgb(56, 3, 73);
   --color-4: white;
+  --color-5: rgb(125, 94, 163);
 }
 
 * {
   box-sizing: border-box;
+
 }
 
 body, html {
@@ -44,8 +46,9 @@ button:hover {
 }
 
 .post-list {
-  margin: 0;
+  margin-left: 0;
   padding: 0;
+  list-style: none;
 }
 
 textarea, input {
@@ -103,6 +106,7 @@ header h1 {
 main {
   flex: 1;
   padding: 2% 4%;
+  background-color: rgb(77, 47, 97);
 }
 
 .btn-primary {
@@ -134,6 +138,10 @@ main {
 .post {
   margin-bottom: 2%;
   line-height: 150%;
+  border-bottom: 3px solid var(--color-5);
+  background-color: var(--color-3);
+  border-radius: 5px;
+  box-shadow: 0px 0px 75px rgba(224, 125, 252, 0.263);
 }
 
 .post .title span {
